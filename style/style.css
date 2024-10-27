@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(224, 224, 159, 0.31);
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+
+.container__main {
+  display: grid;
+  grid-template-columns: repeat 1fr;
+  margin: 10px 10px;
+  max-width: 1500px;
+}
+
+.logo img {
+  height: auto;
+}
+
+.nav__container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__links {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  gap: 2rem;
+  list-style-type: none;
+}
+.nav__links a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.nav__mobile {
+  display: none;
+}
+
+.header__section {
+  background-color: rgb(223, 185, 109);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  min-height: 50px;
+}
+
+.static img {
+  height: 450px;
+  width: 90%;
+  padding: 0 100px;
+}
+
+.container__bienvenidos {
+  background-color: rgba(224, 224, 159, 0.31);
+  color: black;
+  flex-direction: column;
+  font-family: sans-serif;
+  padding: 50px 20PX;
+  text-align: center;
+}
+
+.coffee__types {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 8px 16px;
+}
+
+.coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+}
+.coffee img {
+  height: 120px;
+}
+
+.footer {
+  background-color: rgb(223, 185, 109);
+  font-size: 25px;
+  color: white;
+  padding: 30px 20PX;
+  text-align: center;
+}
+
+@media (width <= 768px) {
+  .container__main {
+    max-width: 768px;
+    overflow: hidden;
+  }
+  .header__section {
+    width: 100%;
+    padding: 0 12px;
+  }
+  .nav__container {
+    display: none;
+  }
+  .nav__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 30px;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid black;
+  }
+  .line {
+    width: 12px;
+    height: 2px;
+    background-color: black;
+  }
+  .static img {
+    width: 100%;
+    padding: 0 12px;
+  }
+  .container__bienvenidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */
