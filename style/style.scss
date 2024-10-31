@@ -65,8 +65,8 @@ body {
 	}
 }
 .container__bienvenidos {
-	background-color: $background-color_1;
-	color: $color_2;
+	background-color: coral;
+	color: darkgrey;
 	flex-direction: column;
 	font-family: $font-family_2;
 	padding: 50px 20PX;
@@ -97,8 +97,6 @@ body {
 	text-align: center;
 }
 
-
-.container__bienvenidos h1{ color: teal;}
 
 
 @media (width <= 768px ) {
